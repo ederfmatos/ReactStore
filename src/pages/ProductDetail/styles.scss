@@ -1,0 +1,113 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  font-family: 'RobotoLight';
+  font-size: 0.8em;
+  margin: 10px 0;
+
+  a {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+}
+
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+
+  .product-images {
+    width: 100%;
+    img {
+      width: 90%;
+    }
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      justify-self: flex-start;
+      font-family: 'RobotoBold';
+      font-size: 2.2em;
+    }
+
+    .price {
+      font-family: 'RobotoMedium';
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .note {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+    .description {
+      font-family: 'RobotoThin';
+      margin: 10px 0 30px;
+      text-align: justify;
+    }
+
+    .title {
+      font-family: 'RobotoMedium';
+    }
+
+    .category,
+    .tags {
+      margin-bottom: 15px;
+    }
+
+    .actions {
+      margin: 20px 0;
+      .counter {
+        width: 110px;
+        border: 2px solid rgb(126, 126, 126);
+        border-radius: 30px;
+      }
+    }
+
+    .more-info {
+      flex: 1;
+      justify-items: baseline;
+      display: flex;
+      align-items: flex-end;
+
+      span {
+        font-family: 'RobotoMedium';
+        text-decoration: underline;
+        cursor: pointer;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.related-products {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  border-top: 1px solid var(--separator-color);
+
+  .title {
+    font-family: 'RobotoMedium';
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .grid {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
