@@ -1,3 +1,3 @@
-// import Component from './Component/Component';
-
-// export { Component };
+export { default as Header } from './Header';
+export { default as Subheader } from './Subheader';
+export { default as Carousel } from './Carousel';

@@ -1,0 +1,17 @@
+.default-theme {
+  /* Header */
+  --header-background: #{$white};
+  --menu-item-border-bottom-color: #{$black};
+
+  /* Subheader */
+  --subheader-background: #{$mediumGray};
+
+  /* Carousel */
+  --carousel-item-title-color: #{$white};
+  --carousel-item-description-color: #{$white};
+  --carousel-item-button-color: #{$white};
+  --carousel-item-button-border-color: #{$white};
+  --carousel-item-button-hover-color: #{$translucentBlack};
+  --carousel-item-indicator-background: #{$mediumGray};
+  --carousel-item-indicator-color: #{$white};
+}

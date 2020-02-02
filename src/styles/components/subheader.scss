@@ -1,0 +1,29 @@
+.subheader {
+  background: var(--subheader-background);
+  display: flex;
+  overflow: hidden;
+  padding: 15px 45px;
+  justify-content: space-between;
+
+  &-item {
+    display: flex;
+    position: relative;
+
+    img {
+      display: inline-block;
+      margin: 0 13px;
+      max-height: 20px;
+    }
+
+    p {
+      display: inline-block;
+      line-height: 1;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 0;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
