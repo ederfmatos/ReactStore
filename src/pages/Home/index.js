@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 
 import { Carousel } from '../../components';
 
+import { bestProducts } from './bestProducts';
+
+import './styles.scss';
+
 import img1 from '../../img/slider-1.jpg';
 import img2 from '../../img/slider-2.jpg';
 import img3 from '../../img/slider-3.jpg';
+
+import delivery from '../../img/icons/f-delivery.png';
 
 const items = [
   {
@@ -29,6 +35,51 @@ export default class Home extends Component {
     return (
       <>
         <Carousel items={items} />
+        <section className="center-screen">
+          <section className="single-features">
+            <div className="single-features-item">
+              <img src={delivery} alt="" />
+              <h4>Free shipping</h4>
+              <p>
+                Fusce urna quam, euismod sit amet mollis quis, vestibulum quis
+                velit. Vesti bulum mal esuada aliquet libero viverra cursus.{' '}
+              </p>
+            </div>
+            <div className="single-features-item">
+              <img src={delivery} alt="" />
+              <h4>Free shipping</h4>
+              <p>
+                Fusce urna quam, euismod sit amet mollis quis, vestibulum quis
+                velit. Vesti bulum mal esuada aliquet libero viverra cursus.{' '}
+              </p>
+            </div>
+            <div className="single-features-item">
+              <img src={delivery} alt="" />
+              <h4>Free shipping</h4>
+              <p>
+                Fusce urna quam, euismod sit amet mollis quis, vestibulum quis
+                velit. Vesti bulum mal esuada aliquet libero viverra cursus.{' '}
+              </p>
+            </div>
+          </section>
+
+          <section className="best-products">
+            <h2 className="title">Produtos mais vistos</h2>
+
+            <ul className="content">
+              {bestProducts.map((item, index) => (
+                <li key={`best-products-item-${index}`}>
+                  <img src={item.img} alt="" />
+                  <span className={`category category--${item.type}`}>
+                    {item.category}
+                  </span>
+                  <p className="name">{item.name}</p>
+                  <span className="price">${item.price}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </section>
       </>
     );
   }

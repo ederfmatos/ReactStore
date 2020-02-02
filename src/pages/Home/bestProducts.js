@@ -1,0 +1,58 @@
+export const bestProducts = [
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+  {
+    type: 'women',
+    category: 'Sun',
+    img: 'https://colorlib.com/preview/theme/violet/img/products/img-1.jpg',
+    name: 'Green Dress with details',
+    price: '22.90',
+  },
+];

@@ -1,0 +1,94 @@
+.center-screen {
+  width: 75%;
+  margin: 25px auto;
+}
+
+.single-features {
+  display: flex;
+  margin-top: 50px;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-family: 'RobotoMedium';
+      font-size: 1.5em;
+      white-space: nowrap;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'RobotoLight';
+      text-align: center;
+    }
+  }
+}
+
+.best-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border-top: 1px solid var(--separator-color);
+
+  .title {
+    font-family: 'RobotoBold';
+    margin: 20px 0;
+    font-size: 3em;
+    text-transform: capitalize;
+  }
+
+  ul.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      margin: 15px;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+
+      .category {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-family: 'RobotoLight';
+        font-size: 0.8em;
+        box-shadow: 1px 1px 1px 1px darkGray;
+
+        &--women {
+          background: var(--badge-accent);
+          color: white;
+          font-family: 'Roboto';
+        }
+      }
+
+      .name {
+        font-family: 'RobotoBold';
+        font-size: 1.15em;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .price {
+        font-family: 'Roboto';
+        margin-top: 10px;
+      }
+    }
+  }
+}
