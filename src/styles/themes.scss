@@ -17,6 +17,12 @@
 
   --separator-color: #{$lightGray};
 
+  /* Footer */
+  --footer-background: #{$black};
+  --footer-input-border-color: #{$lightGray};
+  --footer-text-color: #{$gray-400};
+  --footer-text-color-hover: #{$gray-50};
+
   /* Badges */
   --badge-accent: #{$orange-400};
 }

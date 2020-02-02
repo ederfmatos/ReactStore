@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 
-import { Header, Subheader } from '../components';
+import { Header, Subheader, Footer } from '../components';
 
 import Routes from '../routes';
 
@@ -11,6 +11,7 @@ function App() {
       <Header />
       <Subheader />
       <Routes />
+      <Footer />
     </div>
   );
 }
