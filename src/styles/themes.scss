@@ -2,6 +2,7 @@
   /* Header */
   --header-background: #{$white};
   --menu-item-border-bottom-color: #{$black};
+  --menu-item-color: #{$black};
 
   /* Subheader */
   --subheader-background: #{$mediumGray};
@@ -25,4 +26,7 @@
 
   /* Badges */
   --badge-accent: #{$orange-400};
+
+  /* Spinner */
+  --spinner-color: #{$darkGray};
 }

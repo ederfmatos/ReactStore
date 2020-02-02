@@ -1,0 +1,41 @@
+.center-screen {
+  width: 75%;
+  max-width: 75%;
+  // min-height: calc(100vh - 104px - 50px - 360px);
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.indicators {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  border-bottom: 1px solid gray;
+
+  .counter {
+    font-size: 0.8em;
+    font-family: 'RobotoMedium';
+  }
+}
+
+.loadMore {
+  bottom: 15px;
+  border: 2px solid gray;
+  font-size: 1.2em;
+  padding: 5px;
+  background: transparent;
+  border-radius: 30px;
+  width: 150px;
+  align-self: center;
+}
+
+.grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

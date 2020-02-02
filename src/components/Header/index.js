@@ -7,6 +7,7 @@ import logo from '../../img/logo.png';
 
 export default class Header extends Component {
   render() {
+    console.log(this);
     return (
       <header className="header">
         <div className="logo">
@@ -18,14 +19,15 @@ export default class Header extends Component {
         <nav className="menu">
           <ul>
             {menuItems.map(item => (
-              <li
+              <a
                 key={item.key}
+                href={item.location}
                 className={`menu-item ${
                   item.active ? 'menu-item--active' : ''
                 }`}
               >
-                {item.label}
-              </li>
+                <li>{item.label}</li>
+              </a>
             ))}
           </ul>
         </nav>

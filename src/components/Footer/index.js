@@ -15,19 +15,19 @@ export default class Footer extends Component {
           <button>Inscrever</button>
         </div>
         <ul className="media-socials">
-          <li key="media-social-item">
+          <li>
             <FaInstagram />
             <span>Instagram</span>
           </li>
-          <li key="media-social-item">
+          <li>
             <FaPinterest />
             <span>Pinterest</span>
           </li>
-          <li key="media-social-item">
+          <li>
             <FaFacebook />
             <span>Facebook</span>
           </li>
-          <li key="media-social-item">
+          <li>
             <FaTumblr />
             <span>Tumblr</span>
           </li>

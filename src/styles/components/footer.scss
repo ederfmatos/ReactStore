@@ -1,13 +1,14 @@
 footer {
   background: var(--footer-background);
   display: flex;
+  height: 250px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 16px;
 
   .subscribe {
-    margin-bottom: 25px;
+    margin: 20px 0;
     display: flex;
     position: relative;
     border: 1.5px solid var(--footer-input-border-color);
@@ -68,5 +69,26 @@ footer {
     color: var(--footer-text-color);
     margin-top: 20px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  footer {
+    height: 100%;
+
+    .subscribe,
+    .media-socials,
+    .copyright {
+      width: 100%;
+    }
+
+    .media-socials {
+      flex-direction: column;
+
+      li {
+        margin: 5px 0;
+        transform: scale(1.1);
+      }
+    }
   }
 }

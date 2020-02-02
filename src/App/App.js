@@ -10,7 +10,11 @@ function App() {
     <div className="App default-theme">
       <Header />
       <Subheader />
-      <Routes />
+
+      <div className="app-content">
+        <Routes />
+      </div>
+
       <Footer />
     </div>
   );

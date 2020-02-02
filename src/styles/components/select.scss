@@ -1,0 +1,37 @@
+.select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $mediumGray;
+  position: relative;
+  padding: 5px;
+  display: inline;
+  font-size: 1em;
+  margin: 5px;
+  color: $darkGray;
+  cursor: pointer !important;
+
+  svg {
+    margin-left: 10px;
+  }
+
+  ul {
+    position: absolute;
+    top: 35px;
+    width: auto;
+    z-index: 3;
+    left: 5px;
+    padding: 5px;
+    background: $extraLightGray;
+    border: 1px solid $mediumGray;
+    box-shadow: 1px 1px $translucentBlack;
+
+    li {
+      padding: 5px 10px;
+
+      &:hover {
+        background: $mediumGray;
+        color: white;
+      }
+    }
+  }
+}

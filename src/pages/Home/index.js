@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Carousel } from '../../components';
+import { Carousel, ProductItem } from '../../components';
 
 import { bestProducts } from './bestProducts';
 
@@ -68,14 +68,7 @@ export default class Home extends Component {
 
             <ul className="content">
               {bestProducts.map((item, index) => (
-                <li key={`best-products-item-${index}`}>
-                  <img src={item.img} alt="" />
-                  <span className={`category category--${item.type}`}>
-                    {item.category}
-                  </span>
-                  <p className="name">{item.name}</p>
-                  <span className="price">${item.price}</span>
-                </li>
+                <ProductItem product={item} />
               ))}
             </ul>
           </section>

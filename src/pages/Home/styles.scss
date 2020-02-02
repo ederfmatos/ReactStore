@@ -51,44 +51,5 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    li {
-      display: flex;
-      flex-direction: column;
-      margin: 15px;
-      position: relative;
-      text-align: center;
-      cursor: pointer;
-
-      .category {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        background: white;
-        padding: 5px 10px;
-        border-radius: 15px;
-        font-family: 'RobotoLight';
-        font-size: 0.8em;
-        box-shadow: 1px 1px 1px 1px darkGray;
-
-        &--women {
-          background: var(--badge-accent);
-          color: white;
-          font-family: 'Roboto';
-        }
-      }
-
-      .name {
-        font-family: 'RobotoBold';
-        font-size: 1.15em;
-        text-align: center;
-        margin-top: 15px;
-      }
-
-      .price {
-        font-family: 'Roboto';
-        margin-top: 10px;
-      }
-    }
   }
 }
