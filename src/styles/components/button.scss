@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-height: 50px;
+  border: 2px solid var(--button-border-color);
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: var(--button-background);
+
+  span {
+    font-family: 'RobotoMedium';
+    color: var(--button-color);
+  }
+
+  &--loading {
+    justify-content: space-between;
+    cursor: not-allowed;
+
+    span {
+      margin-left: 20px;
+      color: var(--button-color--disabled);
+    }
+
+    .spinner {
+      transform: scale(0.5);
+    }
+  }
+
+  &--disabled {
+    background: var(--button-background-disabled);
+    cursor: not-allowed;
+
+    span {
+      color: var(--button-color-disabled);
+    }
+  }
+
+  &:hover:not(.button--disabled) {
+    background: var(--button-background-hover);
+  }
+}

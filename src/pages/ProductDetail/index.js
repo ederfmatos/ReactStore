@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import StarRatings from 'react-star-ratings';
 import CounterInput from 'react-counter-input';
 
-import { ProductItem, Spinner } from '../../components';
+import { ProductItem, Spinner, Button } from '../../components';
 import './styles.scss';
 
 export default class ProductDetail extends Component {
@@ -73,7 +73,7 @@ export default class ProductDetail extends Component {
   }
 
   render() {
-    const { loading, product } = this.state;
+    const { loading, product, quantity } = this.state;
 
     if (loading) {
       return (
@@ -107,6 +107,7 @@ export default class ProductDetail extends Component {
                 starDimension="30px"
                 name="rating"
               />
+              white
             </div>
 
             <p className="description">{product.description}</p>
@@ -126,9 +127,15 @@ export default class ProductDetail extends Component {
                 <CounterInput
                   min={0}
                   max={product.stock}
-                  onCountChange={count => console.log(count)}
+                  onCountChange={quantity => this.setState({ quantity })}
                 />
               </div>
+
+              <Button
+                label="Adicionar ao carrinho"
+                onClick={() => alert('clicous')}
+                enable={quantity > 0}
+              />
             </div>
 
             <div className="more-info">

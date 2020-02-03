@@ -67,10 +67,18 @@
 
     .actions {
       margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+
       .counter {
         width: 110px;
         border: 2px solid rgb(126, 126, 126);
         border-radius: 30px;
+      }
+
+      .button {
+        margin: 15px 0;
+        max-width: 200px;
       }
     }
 
