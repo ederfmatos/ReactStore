@@ -47,7 +47,7 @@ export default class Select extends Component {
     return (
       <div className="select" data-label={label}>
         <span onClick={this.handleClick}>
-          <label>{description}</label>
+          <label>{description || ''}</label>
           <Icon />
         </span>
 

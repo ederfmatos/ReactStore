@@ -13,17 +13,21 @@
 
   span {
     display: flex;
+    flex: 1;
     justify-content: space-between;
   }
 
   svg {
     margin-left: 10px;
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 
   ul {
     position: absolute;
     top: 35px;
-    width: auto;
+    width: 100%;
+
     z-index: 3;
     left: 5px;
     padding: 5px;
