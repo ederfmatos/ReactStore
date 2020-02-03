@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import NotFound from './pages/NotFound';
 import ProductDetail from './pages/ProductDetail';
+import Contact from './pages/Contact';
 
 export default function Routes() {
   return (
@@ -13,6 +14,7 @@ export default function Routes() {
         <Route exact path="/" component={Home} />
         <Route path="/produtos/:category?" component={Products} />
         <Route exact path="/produto/:produto" component={ProductDetail} />
+        <Route exact path="/contato" component={Contact} />
         <Route exact path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>

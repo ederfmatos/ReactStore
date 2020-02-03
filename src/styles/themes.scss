@@ -6,6 +6,7 @@
 
   /* Subheader */
   --subheader-background: #{$mediumGray};
+  --subheader-text-color: #{$white};
 
   /* Carousel */
   --carousel-item-title-color: #{$white};
@@ -45,4 +46,18 @@
 
   --button-background-disabled: #{$gray-200};
   --button-color-disabled: #{$gray-500};
+
+  /* Select */
+  --select-item-color: #{$darkGray};
+  --select-item-hover-color: #{$white};
+  --select-item-hover-background: #{$mediumGray};
+
+  --select-container-background: #{$extraLightGray};
+  --select-container-border-color: #{$mediumGray};
+  --select-container-box-shadow-color: #{$translucentBlack};
+
+  /* Input */
+  --input-color: #{$darkGray};
+  --input-border-color: #{$lightGray};
+  --input-background: #{$gray-50};
 }

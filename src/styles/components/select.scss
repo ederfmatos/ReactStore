@@ -1,14 +1,20 @@
 .select {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid $mediumGray;
+  border-bottom: 1px solid var(--select-container-border-color);
   position: relative;
   padding: 5px;
-  display: inline;
   font-size: 1em;
   margin: 5px;
-  color: $darkGray;
+  margin-top: 20px;
+  color: var(--select-item-color);
+  min-width: 150px;
   cursor: pointer !important;
+
+  span {
+    display: flex;
+    justify-content: space-between;
+  }
 
   svg {
     margin-left: 10px;
@@ -21,17 +27,30 @@
     z-index: 3;
     left: 5px;
     padding: 5px;
-    background: $extraLightGray;
-    border: 1px solid $mediumGray;
-    box-shadow: 1px 1px $translucentBlack;
+    background: var(--select-container-background);
+    border: 1px solid var(--select-container-border-color);
+    box-shadow: 1px 1px var(--select-container-box-shadow-color);
 
     li {
       padding: 5px 10px;
 
       &:hover {
-        background: $mediumGray;
-        color: white;
+        background: var(--select-item-hover-background);
+        color: var(--select-item-hover-color);
       }
     }
+  }
+
+  &::after {
+    content: attr(data-label);
+    width: 100%;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-family: 'RobotoLight';
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--input-color);
+    margin-bottom: 4px;
   }
 }
