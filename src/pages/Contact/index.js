@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaUserAlt, FaPhone, FaMailBulk } from 'react-icons/fa';
 import { Select, Button, Input, TextArea } from '../../components';
 
 import './styles.scss';
@@ -31,11 +32,11 @@ export default class Contact extends Component {
         </div>
 
         <form action="">
-          <Input label="Nome" />
+          <Input label="Nome" Icon={FaUserAlt} />
 
-          <Input label="Telefone" />
+          <Input label="Telefone" Icon={FaPhone} />
 
-          <Input label="Email" />
+          <Input label="Email" Icon={FaMailBulk} />
 
           {this.getSelectOptions()}
 

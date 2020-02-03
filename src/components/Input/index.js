@@ -15,11 +15,15 @@ export default class Input extends Component {
   };
 
   render() {
-    const { label } = this.props;
+    const { label, Icon } = this.props;
 
     return (
       <div className={this.getClassNames()}>
-        {label && <label>{label}</label>}
+        <div className="description">
+          {Icon && <Icon />}
+
+          {label && <label>{label}</label>}
+        </div>
 
         <input type="text" onChange={this.handleInputChange} />
       </div>
