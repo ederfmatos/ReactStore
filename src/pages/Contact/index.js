@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaUserAlt, FaPhone, FaMailBulk } from 'react-icons/fa';
+import { FaUserAlt, FaPhone, FaMailBulk, FaPaperclip } from 'react-icons/fa';
 import { Select, Button, Input, TextArea } from '../../components';
 
 import './styles.scss';
@@ -40,7 +40,7 @@ export default class Contact extends Component {
 
           {this.getSelectOptions()}
 
-          <TextArea label="Mensagem" />
+          <TextArea label="Mensagem" Icon={FaPaperclip} />
 
           <div className="mt-1">
             <Button label="Enviar" />

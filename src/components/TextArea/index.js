@@ -15,11 +15,15 @@ export default class TextArea extends Component {
   };
 
   render() {
-    const { label } = this.props;
+    const { label, Icon } = this.props;
 
     return (
       <div className={this.getClassNames()}>
-        {label && <label>{label}</label>}
+        <div className="description">
+          {Icon && <Icon />}
+
+          {label && <label>{label}</label>}
+        </div>
 
         <textarea
           cols="30"

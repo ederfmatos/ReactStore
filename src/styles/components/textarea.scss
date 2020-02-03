@@ -3,6 +3,12 @@
   flex-direction: column;
   margin: 5px 0;
 
+  .description svg {
+    margin: 0 5px;
+    font-size: 0.8em;
+    color: var(--input-color);
+  }
+
   label {
     font-family: 'RobotoLight';
     font-size: 0.95em;
