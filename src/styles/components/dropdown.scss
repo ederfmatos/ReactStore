@@ -1,0 +1,23 @@
+.dropdown {
+  position: absolute;
+  top: 40px;
+  z-index: 3;
+  border: 1px solid var(--dropdown-border-color);
+  background: var(--dropdown-background);
+
+  ul {
+    margin: 0;
+
+    li {
+      white-space: nowrap;
+      margin: 0;
+      padding: 15px;
+      z-index: 5;
+      background: var(--dropdown-background);
+
+      &:hover {
+        background: var(--dropdown-background-hover);
+      }
+    }
+  }
+}

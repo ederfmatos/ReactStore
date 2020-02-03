@@ -31,6 +31,16 @@
       &:hover:after {
         opacity: 1;
       }
+
+      &--hasSubitems {
+        .dropdown {
+          display: none;
+        }
+
+        &:hover .dropdown {
+          display: block;
+        }
+      }
     }
   }
 

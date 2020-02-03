@@ -3,11 +3,15 @@ import { FaShoppingBasket, FaSearch, FaUserAlt } from 'react-icons/fa';
 
 import { menuItems } from './menu';
 
+import { Dropdown } from '../';
 import logo from '../../img/logo.png';
 
 export default class Header extends Component {
+  handleSubItemClick({ item, parent }) {
+    window.location.href = `${parent.location}/${item.value}`;
+  }
+
   render() {
-    console.log(this);
     return (
       <header className="header">
         <div className="logo">
@@ -18,15 +22,24 @@ export default class Header extends Component {
 
         <nav className="menu">
           <ul>
-            {menuItems.map(item => (
+            {menuItems.map((item, index) => (
               <a
-                key={item.key}
-                href={item.location}
-                className={`menu-item ${
-                  item.active ? 'menu-item--active' : ''
-                }`}
+                key={`menu-item-${index}`}
+                href={item.subitems ? null : item.location}
+                className={`menu-item ${item.active ? 'menu-item--active' : ''}
+                ${item.subitems ? 'menu-item--hasSubitems' : ''}
+                `.trim()}
               >
                 <li>{item.label}</li>
+
+                {item.subitems && (
+                  <Dropdown
+                    items={item.subitems}
+                    onItemClick={click =>
+                      this.handleSubItemClick({ item: click, parent: item })
+                    }
+                  />
+                )}
               </a>
             ))}
           </ul>

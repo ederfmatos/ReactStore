@@ -29,4 +29,9 @@
 
   /* Spinner */
   --spinner-color: #{$darkGray};
+
+  /* Dropdown */
+  --dropdown-background: #{$white};
+  --dropdown-background-hover: #{$lightGray};
+  --dropdown-border-color: #{$mediumGray};
 }

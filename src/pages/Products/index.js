@@ -21,14 +21,18 @@ export default class Products extends Component {
   }
 
   async loadProducts() {
+    const { match } = this.props;
+    const { category } = match.params;
+
     const { products, currentPage } = this.state;
 
-    const data = await getProducts({ page: currentPage + 1 });
+    const data = await getProducts({ page: currentPage + 1, category });
 
     this.setState({
       products: [...products, ...data.products],
       currentPage: data.currentPage,
       totalPages: data.totalPages,
+      category,
     });
   }
 
