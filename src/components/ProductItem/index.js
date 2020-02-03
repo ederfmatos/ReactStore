@@ -10,7 +10,7 @@ export default class ProductItem extends Component {
 
     return (
       <Link to={`/produto/${encodeURIComponent(product.id)}`}>
-        <li>
+        <li className="product-item">
           <img src={product.img} alt="" />
           <span className={`category category--${product.type}`}>
             {product.category}
