@@ -46,7 +46,7 @@ export default class Header extends Component {
         </nav>
 
         <div className="user-access">
-          <a href="">Cadastrar</a>
+          <a href="/cadastrar">Cadastrar</a>
           <a href="" className="in">
             Entrar
           </a>
