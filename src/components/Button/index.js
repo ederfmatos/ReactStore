@@ -73,6 +73,10 @@ export default class Button extends Component {
       classNames.push('button--disabled');
     }
 
+    if (this.props.extraClass) {
+      classNames.push(this.props.extraClass);
+    }
+
     return (
       <div className={classNames.join(' ')} onClick={this.handleClick}>
         {childs}

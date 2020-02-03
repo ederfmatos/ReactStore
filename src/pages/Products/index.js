@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Select, ProductItem, Spinner } from '../../components';
+import { Select, ProductItem, Spinner, Button } from '../../components';
 
 import { getProducts } from './products';
 import './styles.scss';
@@ -20,9 +20,13 @@ export default class Products extends Component {
     this.setState({ loading: false });
   }
 
-  async loadProducts() {
+  async loadProducts({ component } = {}) {
     const { match } = this.props;
     const { category } = match.params;
+
+    if (component) {
+      component.disable().showLoadingIndicator();
+    }
 
     const { products, currentPage } = this.state;
 
@@ -32,8 +36,13 @@ export default class Products extends Component {
       products: [...products, ...data.products],
       currentPage: data.currentPage,
       totalPages: data.totalPages,
+      loadingButton: false,
       category,
     });
+
+    if (component) {
+      component.resetState();
+    }
   }
 
   render() {
@@ -76,9 +85,11 @@ export default class Products extends Component {
           </div>
 
           {totalPages > currentPage && (
-            <button className="loadMore" onClick={this.loadProducts.bind(this)}>
-              Ver mais
-            </button>
+            <Button
+              extraClass="loadMore"
+              label="Ver mais"
+              onClick={this.loadProducts.bind(this)}
+            />
           )}
         </section>
       </>

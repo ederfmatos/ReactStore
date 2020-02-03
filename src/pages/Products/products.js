@@ -1,6 +1,6 @@
 const products = [];
 
-for (let i = 0; i < 40; i += 1) {
+for (let i = 0; i < 120; i += 1) {
   products.push({
     type: 'women',
     category: 'Sun',

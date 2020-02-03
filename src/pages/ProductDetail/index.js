@@ -64,6 +64,7 @@ export default class ProductDetail extends Component {
             ],
             rating: 3.5,
             tags: ['Sun', 'Women'],
+            stock: 4,
             description:
               'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. ',
           }),
@@ -134,7 +135,7 @@ export default class ProductDetail extends Component {
               <Button
                 label="Adicionar ao carrinho"
                 onClick={() => alert('clicous')}
-                enable={quantity > 0}
+                enable={quantity > 0 && quantity <= product.stock}
               />
             </div>
 
